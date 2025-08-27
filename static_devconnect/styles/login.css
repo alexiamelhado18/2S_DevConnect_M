@@ -1,5 +1,4 @@
 main {
-    background-color: aqua;
     min-height: 100vh;
     /*minimo de altura da janela do dispositivo*/
     width: 100%;
@@ -10,37 +9,75 @@ main {
 }
 
 main>div {
-    background-color: blueviolet;
-    width: 100%;
-    max-width: 342px;
-    /* height: 400px; */
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 25px;
+    gap: 15px;
 }
 
 form {
-    /* background-color: brown; */
+    display: flex;
+    /*ativa o flex*/
+    flex-direction: column;
+    justify-content: space-between;
+    /*alinha na direção do flex*/
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
 }
 
-#secao-cadastro {
-    /* background-color: burlywood; */
+.formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.formulario-botao-azul {
+    width: 100%;
+}
+
+form>p {
+    text-transform: uppercase;
+    /*deixa o texto em maiusculo*/
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza-escuro3);
+}
+
+form>a, #secao-cadastro > p > a {
+    color: var(--cor-azul);
+    font-size: var(--tamanho-fonte-sm);
+    text-decoration: none;
+    /*remove a decoração (sublinhado) que vem por padrão no link*/
+}
+
+#secao-cadastro > p{
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-md);
 }
 
 .estilo-formulario {
+    width: 100%;
+    max-width: 342px;
     background-color: var(--cor-branco);
     border: var(--borda);
     width: 100%;
 }
 
+#secao-cadastro {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main>div>p {
-    background-color: chocolate;
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
 }
 
 #secao-instalacao {
-    background-color: chartreuse;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
