@@ -11,6 +11,11 @@ main {
     height: 700px;
     width: 90%;
     max-width: 900px;
+    display: flex;
+    /*ativa o flex*/
+    flex-direction: column;
+    /*muda a direção do flex*/
+    gap: 30px;
 }
 
 #storys {
@@ -23,7 +28,7 @@ main {
     gap: 30px;
 }
 
-#storys::-webkit-scrollbar{
+#storys::-webkit-scrollbar {
     width: 0;
 }
 
@@ -34,7 +39,8 @@ main {
 .card-story>button {
     background-color: transparent;
     border: none;
-    /* text-decoration: none; */ /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
+    /* text-decoration: none; */
+    /*SÓ PARA QUEM ESTÁ COM A TAG <a>*/
 
     font-size: var(--tamanho-fonte-sm);
     color: var(--cor-preto);
@@ -54,6 +60,25 @@ main {
 }
 
 /* seção criar publi */
-.formulario-botao-azul{
-    width: 150px;
+.formulario-botao-azul {
+    width: 135px;
+}
+
+#criar-publi {
+    padding: 10px;
+}
+
+#criar-publi>h2 {
+    color: var(--cor-cinza-escuro2);
+    font-size: var(--tamanho-fonte-lg);
+    font-weight: 700;
+}
+
+#criar-publi>form>textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    resize: none;
+    /*desabilita a redimensão do tamanho do elemento*/
+    border: var(--borda);
 }
